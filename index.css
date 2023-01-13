@@ -1,0 +1,79 @@
+html{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgb(47, 133, 203),rgb(140, 173, 198));
+}
+body{
+    margin:0;
+    height:100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(193, 157, 225);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.34);
+    height:80px;
+}
+h2, h3{
+    font-weight: 300;
+}
+.nav-img{
+    width:50px;
+    object-fit: cover;
+    margin-right:10px;
+}
+.nav-div-one{
+    display: flex;
+    margin-left: 10px;
+}
+.nav-div-two{
+    margin-right: 10px;
+}
+.text-div{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+input{
+    height:30px;
+    width: 200px;
+    font-size:25px;
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.man-img{
+    width:30px;
+    padding-left: 10px;
+}
+button{
+    background-color: rgb(193, 157, 225);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+    font-size: 20px;
+    width: 445px;
+    transition:.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.21);
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.548);
+}
+.meme-img{
+    max-width:445px;
+    max-height: 380px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.603);
+}
+.meme-div{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
