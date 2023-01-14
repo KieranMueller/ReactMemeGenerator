@@ -26,10 +26,15 @@ h2, h3{
 }
 .nav-div-one{
     display: flex;
+    align-items: center;
     margin-left: 10px;
 }
 .nav-div-two{
     margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    width:200px;
+    border-left: 1px solid rgba(128, 128, 128, 0.329);
 }
 .text-div{
     display: flex;
@@ -76,4 +81,73 @@ button:hover{
     display: flex;
     justify-content: center;
     padding-top: 50px;
+}
+
+@media screen and (max-width:480px){
+    .meme-img{
+        max-width:350px;
+        max-height: 300px;
+    }
+    input{
+        width: 155px;
+        font-size:16px;
+    }
+    button{
+        background-color: rgb(193, 157, 225);
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:40px;
+        font-size: 16px;
+        width: 350px;
+        transition:.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.21);
+    }
+    .nav-img{
+        width:20%;
+    }
+    h2, h3{
+        font-size: 16px;
+    }
+   
+}
+@media screen and (max-width:375px){
+    .meme-img{
+        max-width:280px;
+        max-height:250px;
+    }
+    input{
+        width: 40%;
+        font-size:16px;
+    }
+    button{
+        background-color: rgb(193, 157, 225);
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:40px;
+        font-size: 16px;
+        width: 90%;
+        transition:.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.21);
+    }
+    .nav-img{
+        width:20%;
+    }
+    h2, h3{
+        font-size: 16px;
+    }
+    .meme-div{
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width: 310px) {
+    h2, h3{
+        font-size: 14px;
+    }
+    .nav-div-two{
+        border-left: 1px solid rgba(128, 128, 128, 0.329);
+    }
 }
