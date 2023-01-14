@@ -87,7 +87,7 @@ button:hover{
 @media screen and (max-width:480px){
     .meme-img{
         max-width:350px;
-        max-height: 340px;
+        max-height: 400px;
     }
     input{
         width: 155px;
