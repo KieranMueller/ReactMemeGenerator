@@ -813,12 +813,8 @@ let memesData = {
 function App() {
 
     const [meme, setMeme] = React.useState({
-        topText: "",
-        bottomText: "",
         randomImage: "welcome.jpg"
     })
-
-    const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 
     function getMeme() {
         const memesArray = memesData.data.memes
@@ -828,6 +824,20 @@ function App() {
                 ...prevMeme, randomImage: url
             
         }))
+    }
+
+    const [textState, setTextState] = React.useState({
+        topText: "",
+        bottomText: ""
+    })
+
+    function handleChange(event) {
+        setTextState(function(prevState) {
+            return {
+                ...prevState,
+                [event.target.name] : event.target.value
+            }
+        })
     }
 
 ///================= The Actual Page ===============================
@@ -845,13 +855,15 @@ function App() {
             </nav>
             <div>
                 <div className="text-div" >
-                    <input type="text" placeholder="top text"></input>
-                    <input type="text" placeholder="bottom text"></input>
+                    <input type="text" placeholder="top text" name="topText" value={textState.topText} onChange = {handleChange}></input>
+                    <input type="text" placeholder="bottom text" name="bottomText" value={textState.bottomText} onChange = {handleChange}></input>
                 </div>
                 <div className="button-div" >
                     <button onClick={getMeme}>Get new Image <img className="man-img" src="man.png"/></button>
                 </div>
                 <div className="meme-div" >
+                    <p className="text top-text">{textState.topText}</p>
+                    <p className="text bottom-text">{textState.bottomText}</p>
                     <img className="meme-img" src={meme.randomImage} />
                 </div>
             </div>
