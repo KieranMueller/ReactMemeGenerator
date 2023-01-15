@@ -79,10 +79,28 @@ button:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.603);
 }
 .meme-div{
+    position: relative;
     display: flex;
     justify-content: center;
     padding-top: 50px;
 }
+.text{
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 8vmin;
+    padding: 0 5px;
+    margin:5px;
+    text-transform: uppercase;
+    color: rgb(245, 245, 245);
+    text-shadow: 0 3px 10px black;
+}
+.bottom-text{
+    bottom:0;
+}
+
+
+
 
 @media screen and (max-width:480px){
     .meme-img{
