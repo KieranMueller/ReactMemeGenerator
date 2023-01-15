@@ -858,8 +858,14 @@ function App() {
                     <input type="text" placeholder="top text" name="topText" value={textState.topText} onChange = {handleChange}></input>
                     <input type="text" placeholder="bottom text" name="bottomText" value={textState.bottomText} onChange = {handleChange}></input>
                 </div>
-                <div className="button-div" >
-                    <button onClick={getMeme}>Get new Image <img className="man-img" src="man.png"/></button>
+                <div className="custom-container">
+                    <div className="button-div" >
+                        <button onClick={getMeme}>Get new Image <img className="man-img" src="man.png"/></button>
+                    </div>
+                    <div className="custom-div">
+                        <button className="custom-btn">Customize</button>
+                        <button className="custom-btn">Save</button>
+                    </div>
                 </div>
                 <div className="meme-div" >
                     <p className="text top-text">{textState.topText}</p>
